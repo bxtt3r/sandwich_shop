@@ -17,7 +17,7 @@ class SandwichCard extends StatelessWidget {
         vertical: 8.0,
       ),
       child: Padding(
-        padding: const EdgeInsets.all(8.0),
+        padding: const EdgeInsets.all(16.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -30,6 +30,7 @@ class SandwichCard extends StatelessWidget {
                   height: 80,
                   fit: BoxFit.cover,
                 ),
+                const SizedBox(width: 16),
                 Expanded(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
