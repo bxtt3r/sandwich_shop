@@ -5,7 +5,7 @@ class SandwichRepository {
     return const [
       Sandwich(
         id: 'footlong',
-        name: 'Footlong sub',
+        name: 'Footlong Sub',
         description: 
         'A fully baked 12-inch sandwich filled with savoury ingredients.',
         price: 7.50,
@@ -13,13 +13,22 @@ class SandwichRepository {
       ),
       Sandwich(        
         id: 'six-inch',
-        name: 'Six-inch sub',
+        name: 'Six-Inch Sub',
         description: 
         'A light 6-inch sandwich made with your favourite toppings.',
         price: 4.50,
         imagePath: 'assets/images/six_inch.png',
       )
     ];
+  }
+
+  Sandwich? getSandwichById(String id) {
+    for (final sandwich in getSandwiches()) {
+      if (sandwich.id == id) {
+        return sandwich;
+      }
+    }
+    return null;
   }
 }
 
