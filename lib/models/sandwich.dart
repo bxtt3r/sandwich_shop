@@ -13,5 +13,5 @@ class Sandwich {
     required this.imagePath,
   });
 
-  String get formattedPrice => price.toStringAsFixed(2);
+  String get formattedPrice => '£${price.toStringAsFixed(2)}';
 }

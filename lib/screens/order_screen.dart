@@ -37,7 +37,7 @@ class _OrderScreenState extends State<OrderScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            OrderItemDisplay(_quantity, 'Footlong'),
+            OrderItemDisplay(_quantity, widget.sandwich.name),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
