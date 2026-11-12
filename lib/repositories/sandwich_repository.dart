@@ -6,19 +6,19 @@ class SandwichRepository {
       Sandwich(
         id: 'footlong',
         name: 'Footlong Sub',
-        description: 
-        'A fully baked 12-inch sandwich filled with savoury ingredients.',
+        description:
+            'A fully baked 12-inch sandwich filled with savoury ingredients.',
         price: 7.50,
         imagePath: 'assets/images/footlong.png',
       ),
-      Sandwich(        
+      Sandwich(
         id: 'six-inch',
         name: 'Six-Inch Sub',
-        description: 
-        'A light 6-inch sandwich made with your favourite toppings.',
+        description:
+            'A light 6-inch sandwich made with your favourite toppings.',
         price: 4.50,
         imagePath: 'assets/images/six_inch.png',
-      )
+      ),
     ];
   }
 
@@ -31,4 +31,3 @@ class SandwichRepository {
     return null;
   }
 }
-

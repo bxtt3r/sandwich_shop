@@ -17,22 +17,21 @@ class _OrderScreenState extends State<OrderScreen> {
   int _quantity = 0;
 
   void _increaseQuantity() {
-      if (_quantity < widget.maxQuantity) {
-        setState(() =>_quantity++);
-      }
+    if (_quantity < widget.maxQuantity) {
+      setState(() => _quantity++);
+    }
   }
 
   void _decreaseQuantity() {
-      if (_quantity > 0) {
-        setState(() => _quantity--);
-      }
+    if (_quantity > 0) {
+      setState(() => _quantity--);
     }
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Order ${widget.sandwich.name}')),
+      appBar: AppBar(title: Text('Order ${widget.sandwich.name}')),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

@@ -5,18 +5,12 @@ import 'package:sandwich_shop/screens/order_screen.dart';
 class SandwichCard extends StatelessWidget {
   final Sandwich sandwich;
 
-  const SandwichCard({
-    super.key,
-    required this.sandwich,
-  });
+  const SandwichCard({super.key, required this.sandwich});
 
   @override
   Widget build(BuildContext context) {
     return Card(
-      margin: const EdgeInsets.symmetric(
-        horizontal: 16.0,
-        vertical: 8.0,
-      ),
+      margin: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
       child: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
@@ -46,9 +40,7 @@ class SandwichCard extends StatelessWidget {
                       const SizedBox(height: 8),
                       Text(
                         sandwich.description,
-                        style: const TextStyle(
-                          color: Colors.black54,
-                        ),
+                        style: const TextStyle(color: Colors.black54),
                       ),
                     ],
                   ),
@@ -69,7 +61,7 @@ class SandwichCard extends StatelessWidget {
                 ElevatedButton(
                   onPressed: () {
                     Navigator.push(
-                      context, 
+                      context,
                       MaterialPageRoute(
                         builder: (context) {
                           return OrderScreen(sandwich: sandwich);
